@@ -1,0 +1,16 @@
+{
+  "name": "my-app",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild --bundle --outfile=./dist/index.js --platform=node --target=node20 ./src/index.ts",
+    "deploy": "genezio deploy",
+    "dev": "genezio local"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.4",
+    "npm-run-all2": "^6.2.0"
+  },
+  "dependencies": {
+    "hono": "^4.6.3"
+  }
+}

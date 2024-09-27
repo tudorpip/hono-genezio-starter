@@ -1,0 +1,13 @@
+name: nitro-template-genezi
+region: us-east-1
+yamlVersion: 2
+backend:
+  path: ./dist/
+  language:
+    name: js
+    packageManager: npm
+  functions:
+    - name: nitroServer
+      path: ./
+      entry: index.js
+      handler: handler
